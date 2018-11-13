@@ -1,11 +1,11 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity hello_world is
+entity heartbeat is
   port ( clk: out std_logic );
-end hello_world;
+end heartbeat;
 
-architecture behaviour of hello_world is
+architecture behaviour of heartbeat is
   constant clk_period : time := 10 ns;
 begin
   -- Clock process definition
