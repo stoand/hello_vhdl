@@ -1,8 +1,8 @@
-entity main is
+entity adder is
     port (i0, i1 : in bit; ci : in bit; s : out bit; co : out bit);
-end main;
+end adder;
 
-architecture rtl of main is
+architecture rtl of adder is
 begin
     -- This full-adder architecture contains two concurrent assignments
     -- Compute the sum.
