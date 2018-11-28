@@ -5,5 +5,6 @@ rm work-*.cf -f
 ghdl -a $FILES
 ghdl -r $1
 "
-nodemon --exec "bash -c '$CMD'" *.vhdl
+# nodemon --exec "bash -c '$CMD'" *.vhdl
+bash -c '$CMD'
 echo $CMD
