@@ -37,7 +37,7 @@ begin
     begin
         for i in patterns'range loop
             i0 <= patterns(i).i0;
-            i0 <= patterns(i).i1;
+            i1 <= patterns(i).i1;
             ci <= patterns(i).ci;
             -- wait for results
             wait for 1 ns;
@@ -47,6 +47,7 @@ begin
             assert co = patterns(i).co
                 report "bad carry" severity error;
         end loop;
+        wait;
         assert false report "end of test" severity note;
     end process;
 end behav;
